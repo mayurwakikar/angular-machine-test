@@ -1,0 +1,65 @@
+input[type=submit] {
+    width: 50%;
+    background-color: #45a049;
+    color: white;
+    padding: 14px,20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 20%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    width: 50%;
+    margin-left: 25%;
+    background-color: aqua;
+  }
+input.ng-invalid.ng-touched{
+    border: red 3px solid;
+}
+/* other */
+label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    /* text-align: center; */
+  }
+  textarea {
+    height: 150px;
+  }
+  button[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: orangered;
+  }
+  h2{
+    background-color: orange;
+    width: 50%;
+    text-align: center;
+  }

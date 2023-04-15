@@ -1,0 +1,13 @@
+header{
+    background-color: cyan;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px;
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .main-container{
+    color: black;
+  }

@@ -1,0 +1,76 @@
+<div class="form">
+  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+    <h2 id="registration">Registration Form</h2>
+    <label for="fname">First Name</label>
+    <input
+      type="text"
+      id="fname"
+      placeholder="Enter your first name"
+      formControlName="firstname"
+    />
+
+    <label for="lname">Last Name</label>
+    <input
+      type="text"
+      id="lname"
+      placeholder="Enter your last name"
+      formControlName="lastname"
+    />
+
+    <label for="email">Email</label>
+    <input
+      type="text"
+      id="email"
+      placeholder="Enter your email"
+      formControlName="email"
+    />
+
+    <label for="country">Country</label>
+    <select id="country" formControlName="country">
+      <option value="india">India</option>
+      <option value="usa">United States</option>
+      <option value="austraila">Austraila</option>
+      <option value="dubai">Dubai</option>
+      <option value="japan">Japan</option>
+    </select><br>
+
+    <div>
+      <label for="gender">Gender :</label>
+      <input type="radio" value="male" id="male" formControlName="gender" />
+      <label for="male">Male</label>
+
+      <input type="radio" value="female" id="female" formControlName="gender" />
+      <label for="female">Female</label>
+
+      <input type="radio" value="other" id="other" formControlName="gender" />
+      <label for="other">Other </label>
+    </div>
+
+    <label for="hobbies">Hobbies <i> (Optional) </i></label>
+    <div class="form-inline">
+      <label
+        ><input type="checkbox" value="sports" formControlName="hobbies" />
+        Sports</label
+      >
+      <label
+        ><input type="checkbox" value="music" formControlName="hobbies" />
+        Music</label
+      >
+      <label
+        ><input type="checkbox" value="bike riding" formControlName="hobbies" />
+        Bike Riding</label
+      >
+      <label
+        ><input type="checkbox" value="trekking" formControlName="hobbies" />
+        Trekking</label
+      >
+      <label
+        ><input type="checkbox" value="trading" formControlName="hobbies" />
+        Trading</label
+      >
+    </div>
+
+    <button
+      type="submit" id="btn" [disabled]="!reactiveForm.valid">Submit</button>
+  </form>
+</div>
